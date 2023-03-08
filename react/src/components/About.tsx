@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion, Variants } from 'framer-motion';
 
 const leftAnimation: Variants = {
@@ -12,12 +12,12 @@ const leftAnimation: Variants = {
     transition: {
       type: "tween",
       duration: 0.3,
-      staggerDirection: 1
+      staggerDirection: -100
     }
   }
 }
 
-const rigthAnimation: Variants = {
+const rightAnimation: Variants = {
   offscreen: {
     x: 500,
     opacity: 0.6
@@ -33,14 +33,28 @@ const rigthAnimation: Variants = {
   }
 }
 
+
 function About() {
+
+
+  const [size, setSize] = useState({
+    x: window.innerWidth,
+    y: window.innerHeight
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth,
+      y: window.innerHeight
+    });
+  useEffect(() => (window.onresize = updateSize), []);
+
   return (
     <div className="about" id="about">
       <motion.div
         initial={"offscreen"}
         whileInView={"onscreen"}
-        viewport={{ once: false, amount: 0.12 }}
-        variants={leftAnimation}
+        viewport={{ once: false, amount: 0 }}
+        variants={size.x < 767 ? {} : leftAnimation}
         className="left-about">
         <div className="title-page">
           <h2>About Me.</h2>
@@ -293,7 +307,7 @@ function About() {
         initial={"offscreen"}
         whileInView={"onscreen"}
         viewport={{ once: false, amount: 0.12 }}
-        variants={rigthAnimation}
+        variants={rightAnimation}
         className="right-about">
         <div className="second-image"></div>
       </motion.div>

@@ -63,6 +63,7 @@ body {
   box-sizing: border-box;
   background-color: #0E1625;
   color: #fff;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -99,7 +100,7 @@ body {
   margin: 0 auto;
   display: grid;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .container .circle-03 {
   width: 100%;
@@ -255,6 +256,8 @@ body {
 }
 .container .about .left-about {
   flex-basis: 50%;
+  position: relative;
+  overflow-y: hidden;
 }
 .container .about .left-about .title-page h2 {
   font-size: 1.25rem;
@@ -880,7 +883,7 @@ body {
 
 @media screen and (max-width: 767px) {
   html, body {
-    font-size: 14px;
+    font-size: 10px;
   }
   .container {
     grid-template-columns: 1fr 1fr;

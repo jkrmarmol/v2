@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, Variants } from 'framer-motion'
 import { FeaturedProps } from './TypeProject';
 
@@ -19,12 +19,24 @@ const cardRightVariants: Variants = {
 };
 
 function FeaturedRightProject({ title, details, techUsed, image, github, view }: FeaturedProps) {
+
+  const [size, setSize] = useState({
+    x: window.innerWidth,
+    y: window.innerHeight
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth,
+      y: window.innerHeight
+    });
+  useEffect(() => (window.onresize = updateSize), []);
+
   return (
     <motion.div
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.12 }}
-      variants={cardRightVariants}
+      variants={size.x < 767 ? {} : cardRightVariants}
       className="featured-project-right">
       <div
         className="project-image">
