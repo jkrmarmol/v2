@@ -1,0 +1,60 @@
+%button-style {
+  border: 1px solid $primary-color;
+  border-radius: 16px;
+  letter-spacing: 10%;
+  color: $primary-color;
+  display: flex;
+  align-items: center;
+  padding: 14px 28px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $background-color;
+    transition: ease-in 70ms;
+  }
+
+  &:active {
+    background-color: rgba($color: $primary-color, $alpha: 0.5);
+    border: 1px solid rgba($color: $primary-color, $alpha: 0.3);
+  }
+}
+
+%navbar:hover {
+  transition: ease-in 70ms;
+  cursor: pointer;
+  color: $primary-color;
+}
+
+%icon {
+  fill: rgba($color: #ffffff, $alpha: 0.6);
+  cursor: pointer;
+
+  &:hover {
+    fill: $primary-color;
+    transition: ease-in 70ms;
+  }
+}
+
+%form-input {
+  border: 1px solid $primary-color;
+  background-color: transparent;
+  padding: 10px;
+  color: #fff;
+  font-family: $secondary-font;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+}
+
+
+%circle-design {
+  border-radius: 50%;
+  background-color: rgba($color: $primary-color, $alpha: 0.3);
+  height: 122.54vh;
+  width: 122.54vh;
+  position: absolute;
+}
