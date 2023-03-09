@@ -63,12 +63,11 @@ body {
   box-sizing: border-box;
   background-color: #0E1625;
   color: #fff;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
   width: 7px;
-  height: 10px;
+  height: 1px;
 }
 
 ::-webkit-scrollbar-track {
@@ -100,7 +99,8 @@ body {
   margin: 0 auto;
   display: grid;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  width: 100%;
 }
 .container .circle-03 {
   width: 100%;
@@ -954,14 +954,26 @@ body {
     margin: 0;
   }
   .container .home {
+    margin-top: 5vh;
     height: 100vh;
     width: 90%;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container .home .right-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container .home .right-home .my-image {
-    height: 250px;
-    width: 150px;
+    height: 200px;
+    width: 120px;
+  }
+  .container .home .right-home .social-media {
+    display: flex;
+    justify-content: center;
+    margin: 0;
   }
   .container .home .left-home {
     display: flex;
