@@ -884,7 +884,7 @@ body {
   }
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 90vh 100vh 1fr 200vh 20vh;
+    grid-template-rows: 10vh 90vh 100vh 1fr 200vh 25vh;
   }
   .container .circle-03 .c1 {
     height: 220px;
@@ -1012,14 +1012,17 @@ body {
   .container .about .left-about .about-detail p {
     font-size: 1.25rem;
   }
+  .container .about .left-about .tech-stack .tech-detail {
+    font-size: 1.25rem;
+  }
   .container .about .left-about .tech-stack .tech-logo .logo1 > * {
-    margin: 9px 0px;
+    margin: 3px 0px;
   }
   .container .about .left-about .tech-stack .tech-logo .logo1 > * p {
     font-size: 1.25rem;
   }
   .container .about .left-about .tech-stack .tech-logo .logo2 > * {
-    margin: 9px 0px;
+    margin: 3px 0px;
   }
   .container .about .left-about .tech-stack .tech-logo .logo2 > * p {
     font-size: 1.25rem;
