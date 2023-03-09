@@ -18,7 +18,7 @@ const cardLeftVariants: Variants = {
   }
 };
 
-function FeaturedLeftProject({ title, details, techUsed, image, github, view }: FeaturedProps) {
+function FeaturedLeftProject({ title, details, techUsed, image, github, view }: FeaturedProps): JSX.Element {
 
   const [size, setSize] = useState({
     x: window.innerWidth,

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-.container .contact .right-contact .send-message .form-button button, .container .project .view-all a button, .container .home .left-home a button, .container .header .h-width .nav ul .resume {
+.container .contact .right-contact .send-message .form-input .form-button button, .container .project .view-all a button, .container .home .left-home a button, .container .header .h-width .nav ul .resume {
   border: 1px solid rgb(255, 174, 87);
   border-radius: 16px;
   letter-spacing: 10%;
@@ -14,12 +14,12 @@
   font-weight: bold;
   cursor: pointer;
 }
-.container .contact .right-contact .send-message .form-button button:hover, .container .project .view-all a button:hover, .container .home .left-home a button:hover, .container .header .h-width .nav ul .resume:hover {
+.container .contact .right-contact .send-message .form-input .form-button button:hover, .container .project .view-all a button:hover, .container .home .left-home a button:hover, .container .header .h-width .nav ul .resume:hover {
   background-color: rgb(255, 174, 87);
   color: #0E1625;
   transition: ease-in 70ms;
 }
-.container .contact .right-contact .send-message .form-button button:active, .container .project .view-all a button:active, .container .home .left-home a button:active, .container .header .h-width .nav ul .resume:active {
+.container .contact .right-contact .send-message .form-input .form-button button:active, .container .project .view-all a button:active, .container .home .left-home a button:active, .container .header .h-width .nav ul .resume:active {
   background-color: rgba(255, 174, 87, 0.5);
   border: 1px solid rgba(255, 174, 87, 0.3);
 }
@@ -39,14 +39,14 @@
   transition: ease-in 70ms;
 }
 
-.container .contact .right-contact .send-message #message, .container .contact .right-contact .send-message #subject, .container .contact .right-contact .send-message .form-inline #email, .container .contact .right-contact .send-message .form-inline #name {
+.container .contact .right-contact .send-message .form-input .subj-message #message, .container .contact .right-contact .send-message .form-input .subj-message #subject, .container .contact .right-contact .send-message .form-input .form-inline > * {
   border: 1px solid rgb(255, 174, 87);
   background-color: transparent;
-  padding: 10px;
+  padding: 0.625rem;
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 2px;
-  margin: 10px 0px;
+  margin: 0.625rem 0px;
 }
 
 .container .circle-03 .c3, .container .circle-03 .c2, .container .circle-03 .c1 {
@@ -580,7 +580,7 @@ body {
 }
 .container .project .featured-project-right .project-image {
   flex-basis: 70%;
-  height: auto;
+  height: 25rem;
   justify-self: center !important;
   align-self: center;
 }
@@ -633,7 +633,7 @@ body {
 }
 .container .project .featured-project-right .project-description .tech-uses > * {
   border: 1px solid rgb(255, 174, 87);
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   margin-left: 10px;
   font-weight: medium;
   background-color: #0E1625;
@@ -784,12 +784,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  position: relative;
 }
 .container .contact .right-contact .send-message {
-  background-color: #171C28;
+  padding: 20px;
   margin-left: 10%;
   margin-right: 20%;
-  padding: 8%;
+  width: 100%;
+  background-color: #171C28;
   border-radius: 16px;
 }
 .container .contact .right-contact .send-message h2 {
@@ -797,27 +800,21 @@ body {
   font-family: "Tilt Warp", cursive;
   color: rgb(255, 174, 87);
 }
-.container .contact .right-contact .send-message .form-inline {
+.container .contact .right-contact .send-message .form-input .form-inline {
   display: flex;
-  align-items: center;
-  width: 100%;
+  justify-content: space-between;
 }
-.container .contact .right-contact .send-message .form-inline #name {
-  width: 50%;
-  margin-right: 5px;
+.container .contact .right-contact .send-message .form-input .form-inline > * {
+  width: 43%;
+  font-size: 1.25rem !important;
 }
-.container .contact .right-contact .send-message .form-inline #email {
-  width: 50%;
-  margin-left: 5px;
+.container .contact .right-contact .send-message .form-input .subj-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.container .contact .right-contact .send-message #subject {
-  width: 95%;
-}
-.container .contact .right-contact .send-message #message {
-  width: 95%;
-  resize: none;
-}
-.container .contact .right-contact .send-message .form-button {
+.container .contact .right-contact .send-message .form-input .form-button {
+  margin-top: 1rem;
   display: flex;
   justify-content: end;
   width: 100%;
@@ -887,7 +884,7 @@ body {
   }
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 90vh 100vh 1fr 200vh 30vh;
+    grid-template-rows: 10vh 90vh 100vh 1fr 200vh 20vh;
   }
   .container .circle-03 .c1 {
     height: 220px;
@@ -921,10 +918,11 @@ body {
   }
   .container .header .h-width .openNav {
     position: fixed;
+    align-items: center;
     height: 100%;
     top: 0;
-    width: 100%;
     left: 0;
+    right: 0;
     background-color: #0E1625;
     transition: 0.1s ease-in;
   }
@@ -943,8 +941,17 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     justify-content: center;
     align-items: center;
+  }
+  .container .header .h-width .openNav ul > * {
+    margin: 0;
+  }
+  .container .header .h-width .openNav ul > * a {
+    margin: 0;
   }
   .container .home {
     height: 100vh;
@@ -987,17 +994,35 @@ body {
   .container .about .left-about {
     flex-basis: 100%;
   }
+  .container .about .left-about .title-page h2 {
+    font-size: 2.25rem;
+  }
+  .container .about .left-about .about-detail p {
+    font-size: 1.25rem;
+  }
   .container .about .left-about .tech-stack .tech-logo .logo1 > * {
     margin: 9px 0px;
   }
+  .container .about .left-about .tech-stack .tech-logo .logo1 > * p {
+    font-size: 1.25rem;
+  }
   .container .about .left-about .tech-stack .tech-logo .logo2 > * {
     margin: 9px 0px;
+  }
+  .container .about .left-about .tech-stack .tech-logo .logo2 > * p {
+    font-size: 1.25rem;
   }
   .container .project {
     width: 90%;
   }
   .container .project .proj-header {
     width: 100%;
+  }
+  .container .project .proj-header h2 {
+    font-size: 2.25rem;
+  }
+  .container .project .proj-header p {
+    font-size: 1.25rem;
   }
   .container .project .featured-project-right {
     flex-direction: column;
@@ -1007,11 +1032,22 @@ body {
     height: 80%;
     margin-bottom: 30px;
   }
+  .container .project .featured-project-right .project-description .f-name {
+    font-size: 1.25rem;
+  }
+  .container .project .featured-project-right .project-description .p-title {
+    font-size: 2.5rem;
+  }
   .container .project .featured-project-right .project-description .p-detail {
     width: 90%;
+    font-size: 1.25rem;
+    text-align: justify;
   }
   .container .project .featured-project-right .project-description .tech-uses {
     flex-wrap: wrap;
+  }
+  .container .project .featured-project-right .project-description .tech-uses p {
+    font-size: 1rem;
   }
   .container .project .featured-project-left {
     flex-direction: column-reverse;
@@ -1022,11 +1058,22 @@ body {
     margin-bottom: 30px;
     margin-left: -5%;
   }
+  .container .project .featured-project-left .project-description .f-name {
+    font-size: 1.25rem;
+  }
+  .container .project .featured-project-left .project-description .p-title {
+    font-size: 2.5rem;
+  }
   .container .project .featured-project-left .project-description .p-detail {
     width: 90%;
+    font-size: 1.25rem;
+    text-align: justify;
   }
   .container .project .featured-project-left .project-description .tech-uses {
     flex-wrap: wrap;
+  }
+  .container .project .featured-project-left .project-description .tech-uses p {
+    font-size: 1rem;
   }
   .container .contact {
     grid-row: 5/span 1;
@@ -1036,8 +1083,20 @@ body {
   .container .contact .left-contact .contact-me {
     margin: 0% 10%;
   }
+  .container .contact .left-contact .contact-me h2 {
+    font-size: 2.25rem;
+  }
+  .container .contact .left-contact .contact-me p {
+    font-size: 1.25rem;
+  }
   .container .contact .right-contact .send-message {
     margin: 0% 10%;
+  }
+  .container .contact .right-contact .send-message h2 {
+    font-size: 2.25rem;
+  }
+  .container .contact .right-contact .send-message input {
+    font-size: 1.25rem;
   }
   .container .footer .nav-list ul > * {
     padding: 0;

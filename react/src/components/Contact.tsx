@@ -28,22 +28,28 @@ function Contact() {
       <div className="right-contact">
         <div className="send-message">
           <h2>Send a message.</h2>
-          <div className="form-inline">
-            <input type="text" id="name" placeholder="Name" />
-            <input type="text" id="email" placeholder="Email" />
-          </div>
-          <input type="text" id="subject" placeholder="Subject" />
-          <br />
-          <textarea
-            name=""
-            id="message"
-            rows={13}
-            placeholder="Message"
-          ></textarea>
+          <div className='form-input'>
+            <div className="form-inline">
+              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="email" placeholder="Email" />
+            </div>
+            <div className='subj-message'>
+              <input type="text" id="subject" placeholder="Subject" />
+              <br />
+              <textarea
+                name=""
+                id="message"
+                rows={13}
+                placeholder="Message"
+              ></textarea>
+            </div>
 
-          <div className="form-button">
-            <motion.button whileHover={{ scale: 1.1 }}>SEND MESSAGE</motion.button>
+
+            <div className="form-button">
+              <motion.button whileHover={{ scale: 1.1 }}>SEND MESSAGE</motion.button>
+            </div>
           </div>
+
         </div>
       </div>
     </div>

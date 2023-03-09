@@ -339,7 +339,7 @@ body {
 
       .project-image {
         flex-basis: 70%;
-        height: auto;
+        height: 25rem;
         justify-self: center !important;
         align-self: center;
         img {
@@ -387,7 +387,7 @@ body {
         
         .tech-uses > * {
           border: 1px solid $primary-color;
-          padding: 10px 20px;
+          padding: 0.625rem 1.25rem;
           margin-left: 10px;
           font-weight: medium;
           background-color: $background-color;
@@ -543,59 +543,60 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 100%;
+      position: relative;
+
       .send-message {
-        
-        background-color: #171C28;
+        padding: 20px;
         margin-left: 10%;
         margin-right: 20%;
-        padding: 8%;
+        width: 100%;
+        background-color: #171C28;
         border-radius: 16px;
+
         h2 {
           font-size: 1.25rem;
           font-family: $primary-font;
           color: $primary-color;
         }
-
-        .form-inline {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          #name {
+        
+        .form-input {
+          .form-inline {
+            display: flex;
+            justify-content: space-between
+  
+          }
+          .form-inline > *{
             @extend %form-input;
-            width: 50%;
-            margin-right: 5px;
+            width: 43%;
+            font-size: 1.25rem !important;
           }
 
-          #email {
-            @extend %form-input;
-            width: 50%;
-            margin-left: 5px;
+          .subj-message {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            #subject {
+              @extend %form-input;
+            }
+  
+            #message {
+              @extend %form-input;
+            }
           }
-        }
 
-        #subject {
-          @extend %form-input;
-          width: 95%;
-        }
-
-        #message {
-          @extend %form-input;
-          width: 95%;
-          resize: none;
-        }
-
-        .form-button {
-          display: flex;
-          justify-content: end;
-          width: 100%;
-          button {
-            @extend %button-style;
+          .form-button {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            button {
+              @extend %button-style;
+            }
           }
+  
+          
         }
-        
-        
-        
-
       }
     }
   }
@@ -667,8 +668,6 @@ body {
 
 }
 
-
-// Media
 @include phone-responsive {
   html, body {
     font-size: 10px;
@@ -676,7 +675,7 @@ body {
 
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 90vh 100vh 1fr 200vh 30vh;
+    grid-template-rows: 10vh 90vh 100vh 1fr 200vh 20vh;
 
     .circle-03 {
       .c1 {
@@ -719,10 +718,11 @@ body {
         
         .openNav {
           position: fixed;
+          align-items: center;
           height: 100%;
           top: 0;
-          width: 100%;
           left: 0;
+          right: 0;
           background-color: $background-color;
           transition: 0.1s ease-in;
 
@@ -741,12 +741,21 @@ body {
           }
 
           ul {
-            // display: none;
             display: flex;
             flex-direction: column;
             height: 100%;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
             justify-content: center;
             align-items: center;
+          }
+
+          ul > * {
+            margin: 0;
+            a {
+              margin: 0;
+            }
           }
           
         }
@@ -804,14 +813,32 @@ body {
       .left-about {
         flex-basis: 100%;
 
+        .title-page {
+          h2 {
+            font-size: 2.25rem;
+          }
+        }
+
+        .about-detail {
+          p {
+            font-size: 1.25rem;
+          }
+        }
+
         .tech-stack {
           .tech-logo {
             .logo1 > * {
               margin:9px 0px;
+              p {
+                font-size: 1.25rem;
+              }
             }
 
             .logo2 > * {
               margin : 9px 0px;
+              p {
+                font-size: 1.25rem;
+              }
             }
           }
         }
@@ -823,6 +850,12 @@ body {
       width: 90%;
       .proj-header {
         width: 100%;
+        h2 {
+          font-size: 2.25rem;
+        }
+        p {
+          font-size: 1.25rem;
+        }
       }
 
       .featured-project-right {
@@ -836,12 +869,24 @@ body {
 
         .project-description {
 
+          .f-name {
+            font-size: 1.25rem;
+          }
+          .p-title {
+            font-size: 2.5rem;
+          }
+
           .p-detail {
             width: 90%;
+            font-size: 1.25rem;
+            text-align: justify;
           }
 
           .tech-uses {
             flex-wrap: wrap;
+            p {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -858,12 +903,24 @@ body {
 
         .project-description {
 
+          .f-name {
+            font-size: 1.25rem;
+          }
+          .p-title {
+            font-size: 2.5rem;
+          }
+
           .p-detail {
             width: 90%;
+            font-size: 1.25rem;
+            text-align: justify;
           }
 
           .tech-uses {
             flex-wrap: wrap;
+            p {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -878,11 +935,23 @@ body {
       .left-contact {
         .contact-me {
           margin: 0% 10%;
+          h2 {
+            font-size: 2.25rem;
+          }
+          p {
+            font-size: 1.25rem;
+          }
         }
       }
       .right-contact {
         .send-message {
           margin: 0% 10%;
+          h2 {
+            font-size: 2.25rem;
+          }
+          input {
+            font-size: 1.25rem;
+          }
         }
       }
     }
