@@ -45,7 +45,7 @@ const profilePictureAnimation: Variants = {
 
 function Home(): JSX.Element {
   return (
-    <div className="home" id="home">
+    <div className="home">
       <div className="left-home">
         <motion.div
           initial="offscreen"

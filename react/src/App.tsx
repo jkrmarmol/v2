@@ -17,7 +17,7 @@ function App() {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      <div className='container'>
+      <div className='container' id="home">
         <Circle />
         <Header />
         <Home />
