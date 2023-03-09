@@ -7,7 +7,7 @@
   color: rgb(255, 174, 87);
   display: flex;
   align-items: center;
-  padding: 14px 28px;
+  padding: 0.875rem 1.75rem;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 1.5px;
   background-color: transparent;
@@ -806,7 +806,6 @@ body {
 }
 .container .contact .right-contact .send-message .form-input .form-inline > * {
   width: 43%;
-  font-size: 1.25rem !important;
 }
 .container .contact .right-contact .send-message .form-input .subj-message {
   display: flex;
