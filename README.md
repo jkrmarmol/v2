@@ -1,5 +1,5 @@
 # **My Personal Website v2**
-This repository contains the source code for my personal website. The website is built using HTML, CSS, React JS, and TypeScript using Vite.js.
+This repository contains the source code for my personal website. The website is built using HTML, CSS, React JS, and TypeScript using Vite.js. view [here](https://jkrmarmolv2.vercel.app/)
 
 ## **Prototype**
 You can view the prototype of the website [here](https://www.figma.com/proto/1ha9IV8yaiLRSMXZ2iveYJ/new-react-portfolio?page-id=0%3A1&node-id=4%3A24&viewport=601%2C-514%2C0.31&scaling=scale-down&starting-point-node-id=2%3A2)
