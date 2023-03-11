@@ -31,7 +31,5 @@ To build the website for production, run npm run build. This will generate a dis
 ## **Contributing**
 If you find a bug or have a feature request, please open an issue on GitHub. Pull requests are also welcome!
 
-## **License**
-This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 Feel free to customize this template to fit your needs. Let me know if you have any questions!
