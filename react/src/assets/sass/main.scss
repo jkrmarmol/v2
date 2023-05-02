@@ -172,7 +172,7 @@ body {
       .passion {
         width: 90%;
         margin-top: -20px;
-        @include font-ubuntu($line-height: 120%, $font-size: 1rem, $opacity: 0.7)
+        @include font-ubuntu($line-height: 120%, $font-size: 1.25rem, $opacity: 0.7)
       }
 
       a {
