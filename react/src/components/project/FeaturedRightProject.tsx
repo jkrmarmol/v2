@@ -38,6 +38,7 @@ function FeaturedRightProject({ title, details, techUsed, image, github, view }:
       viewport={{ once: false, amount: 0.12 }}
       variants={size.x < 767 ? {} : cardRightVariants}
       className="featured-project-right">
+
       <div
         className="project-image">
         <img

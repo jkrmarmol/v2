@@ -2,6 +2,8 @@ import BMISCover from '../../assets/images/bims.png';
 import CatGPTCover from '../../assets/images/catgpt.png';
 import SESCover from '../../assets/images/enrollment_system.png';
 import FightCovid from '../../assets/images/fight-covid.gif'
+import SchoolMSCover from '../../assets/images/sms.png';
+import Portfoliov2Cover from '../../assets/images/porfoliov2.png';
 import UnderDevelopment from '../../assets/images/under-development.gif'
 
 export const projectInfo: any = [
@@ -41,8 +43,16 @@ export const projectInfo: any = [
     title: 'School Management System',
     details: 'A School Management System streamlines operations, enhances communication, automates tasks, improves efficiency, and provides a user-friendly, secure, and scalable solution for schools to manage student enrollment, attendance, scheduling, grading, and reporting.',
     techUsed: ['TypeScript', 'ReactJS', 'Node.js', 'Express.js', 'MongoDB', 'Vite.js'],
-    image: UnderDevelopment,
+    image: SchoolMSCover,
     github: 'not-available',
-    view: 'not-available'
+    view: 'https://schoolms.jkrmarmol.tech/'
+  },
+  {
+    title: 'Portfolio v2 && Design',
+    details: 'My portfolio v2 is designed to give you a comprehensive overview of my skills, from concept development to execution. Here, you will find examples of my past work, as well as detailed descriptions of the projects I have completed. ',
+    techUsed: ['Vite.js', 'React.js', 'HTML5', 'CSS3', 'Sass', 'Framer Motion', 'Figma'],
+    image: Portfoliov2Cover,
+    github: 'not-available',
+    view: 'https://jkrmarmol.tech/'
   },
 ]

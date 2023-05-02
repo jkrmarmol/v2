@@ -172,7 +172,7 @@ body {
       .passion {
         width: 90%;
         margin-top: -20px;
-        @include font-ubuntu($line-height: 120%, $font-size: 1.25rem, $opacity: 0.6)
+        @include font-ubuntu($line-height: 120%, $font-size: 1rem, $opacity: 0.7)
       }
 
       a {
@@ -340,7 +340,7 @@ body {
 
       .project-image {
         flex-basis: 70%;
-        height: 25rem;
+        height: auto;
         justify-self: center !important;
         align-self: center;
         img {
@@ -802,6 +802,7 @@ body {
 
         .passion {
           text-align: center;
+          
         }
 
         a {

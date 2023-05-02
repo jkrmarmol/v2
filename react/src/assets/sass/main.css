@@ -201,8 +201,8 @@ body {
 .container .home .left-home .passion {
   width: 90%;
   margin-top: -20px;
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
   letter-spacing: 2px;
   line-height: 120%;
   text-align: left;
@@ -580,7 +580,7 @@ body {
 }
 .container .project .featured-project-right .project-image {
   flex-basis: 70%;
-  height: 25rem;
+  height: auto;
   justify-self: center !important;
   align-self: center;
 }
