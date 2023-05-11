@@ -62,7 +62,7 @@ function About() {
 
         <div className="about-detail">
           <p>
-            I am a 20-year-old, 2nd year BS Computer Engineering student with a great passion for web development, particularly in the MERN stack. Alongside my studies, I have been exploring different tools and technologies to build web applications. I am highly dedicated to learning new skills and believe that my enthusiasm for web development makes me a valuable asset to any team.
+            I am a 20-year-old, 2nd year BS Computer Engineering student with a great passion for web and mobile development, particularly in the MERN stack. Alongside my studies, I have been exploring different tools and technologies to build software applications. I am highly dedicated to learning new skills and believe that my enthusiasm for web & mobile development makes me a valuable asset to any team.
           </p>
         </div>
 

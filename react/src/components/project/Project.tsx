@@ -40,9 +40,9 @@ function Project() {
       <div className="proj-header">
         <h2>My Project.</h2>
         <p>
-          I am proud to showcase a diverse portfolio of web development, web
-          design and app development projects that demonstrate my expertise in
-          various technologies 😎
+          I am proud to showcase a diverse portfolio of web development,
+          mobile development, and web design projects that demonstrate
+          my expertise in various technologies 😎
         </p>
       </div>
 

@@ -68,8 +68,8 @@ function Home(): JSX.Element {
           animate="onscreen"
           variants={upAnimation}
           className="passion">
-          I am a passionate MERN stack developer with expertise in building
-          web applications. I am dedicated to delivering quality and
+          I am a passionate MERN Stack Developer with expertise in building
+          web and mobile application. I am dedicated to delivering quality and
           user-friendly solutions that meet my client’s needs.
         </motion.div>
         <a href="#contact">
