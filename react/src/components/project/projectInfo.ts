@@ -5,6 +5,8 @@ import FightCovid from '../../assets/images/fight-covid.gif'
 import SchoolMSCover from '../../assets/images/sms.png';
 import Portfoliov2Cover from '../../assets/images/porfoliov2.png';
 import UnderDevelopment from '../../assets/images/under-development.gif'
+import MediBlokcCover from '../../assets/images/mediblokc.png'
+import KumaLibCover from '../../assets/images/KumaLib.png'
 
 export const projectInfo: any = [
   {
@@ -12,7 +14,7 @@ export const projectInfo: any = [
     details: 'BIMS provides LGUs with a centralized database of information that can be accessed and updated easily, allowing them to track and monitor the needs and activities of the barangay more efficiently.',
     techUsed: ['PostgreSQL', 'TypeScript', 'ReactJS', 'Node.js', 'ExpressJS', 'BootStrap'],
     image: BMISCover,
-    github: 'not-available',
+    github: '',
     view: 'https://www.youtube.com/watch?v=SZptpkdpzL0&t=21s'
   },
   {
@@ -36,7 +38,7 @@ export const projectInfo: any = [
     details: 'Introducing a web enrollment system can streamline the registration process, provide a user-friendly platform, automate tasks, reduce paperwork, eliminate manual data entry errors, and enhance the overall experience for users, ultimately saving time and resources for the organization',
     techUsed: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL', 'BootStrap'],
     image: SESCover,
-    github: 'not-available',
+    github: '',
     view: 'https://xkurtph.000webhostapp.com/dist/view/login.php'
   },
   {
@@ -44,7 +46,7 @@ export const projectInfo: any = [
     details: 'A School Management System streamlines operations, enhances communication, automates tasks, improves efficiency, and provides a user-friendly, secure, and scalable solution for schools to manage student enrollment, attendance, scheduling, grading, and reporting.',
     techUsed: ['TypeScript', 'ReactJS', 'Node.js', 'Express.js', 'MongoDB', 'Vite.js'],
     image: SchoolMSCover,
-    github: 'not-available',
+    github: '',
     view: 'https://schoolms.jkrmarmol.tech/'
   },
   {
@@ -52,7 +54,23 @@ export const projectInfo: any = [
     details: 'My portfolio v2 is designed to give you a comprehensive overview of my skills, from concept development to execution. Here, you will find examples of my past work, as well as detailed descriptions of the projects I have completed. ',
     techUsed: ['Vite.js', 'React.js', 'HTML5', 'CSS3', 'Sass', 'Framer Motion', 'Figma'],
     image: Portfoliov2Cover,
-    github: 'not-available',
+    github: '',
     view: 'https://jkrmarmol.tech/'
+  },
+  {
+    title: 'MediBlokc',
+    details: 'Mediblokc is an Electronic Health Record (EHR) that allows healthcare professionals to access, manage, and share patient health information securely and conviniently for Doctors and Patients that provide access to quality healthcare enabling healthcare professionals to access, manage and share patient health information unlike Medrec:M and other platform apps.',
+    techUsed: ['JavaScript', 'Node.js', 'Express.js', 'Figma', 'AWS S3', 'React Native', 'MongoDB'],
+    image: MediBlokcCover,
+    github: '',
+    view: ''
+  },
+  {
+    title: 'KumaLib',
+    details: 'KumaLib aims to provide a vast collection of ebooks and articles across diverse genres. It is currently under active development and is not yet ready for production use.',
+    techUsed: ['TypeScript', 'React Native', 'Figma'],
+    image: KumaLibCover,
+    github: '',
+    view: ''
   },
 ]
