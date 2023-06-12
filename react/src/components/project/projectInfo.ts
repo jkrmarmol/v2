@@ -6,7 +6,7 @@ import SchoolMSCover from '../../assets/images/sms.png';
 import Portfoliov2Cover from '../../assets/images/porfoliov2.png';
 import UnderDevelopment from '../../assets/images/under-development.gif'
 import MediBlokcCover from '../../assets/images/mediblokc.png'
-import KumaLibCover from '../../assets/images/KumaLib.png'
+import KumaLibCover from '../../assets/images/kumalib.png';
 
 export const projectInfo: any = [
   {
